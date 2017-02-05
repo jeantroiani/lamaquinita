@@ -1,9 +1,9 @@
 {
-  "name": "jsdevenv",
+  "name": "lamaqunita",
   "version": "1.0.0",
-  "description": "JavaScript development environment",
+  "description": "Application to discover artist and help the ones in need at the same time",
   "scripts": {
-    "localtunnel": "lt --port 8080 --subdomain inmotion",
+    "localtunnel": "lt --port 8080 --subdomain lamaquinita",
     "share": "npm-run-all --parallel server localtunnel  ",
     "start": "npm-run-all --parallel security-check test:watch server lint:watch",
     "server": "node -r dotenv/config buildScripts/server.js",
@@ -18,7 +18,7 @@
     "build": "node buildScripts/build",
     "postbuild": "node serverScripts/server"
   },
-  "author": "InMotion",
+  "author": "jean troiani",
   "license": "MIT",
   "dependencies": {
     "es6-promise": "^4.0.5",
@@ -38,7 +38,7 @@
     "babel-plugin-transform-async-to-generator": "^6.22.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-latest": "^6.16.0",
-    "babel-preset-react": "^6.16.0",
+    "babel-preset-react": "^6.22.0",
     "babel-preset-stage-0": "^6.22.0",
     "babel-register": "^6.16.3",
     "babel-runtime": "^6.22.0",

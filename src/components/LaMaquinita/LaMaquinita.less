@@ -1,0 +1,42 @@
+@import '../../styles/mediaQueries.less';
+@import '../../styles/fonts.less';
+@import '../../styles/colors.less';
+
+.container {
+    padding: 4px;
+    font-size: 1rem;
+
+    @media @desktop {
+        padding: 20px;
+    }
+}
+
+.main-title {
+    font-size: @font-size-large;
+    color: @blue-brand;
+    margin-bottom: 12px;
+    text-align: center;
+    position: relative;
+
+        &:after {
+        content: "";
+        background-image: data-uri('./laMaquinita.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        position: absolute;
+        height: 100%;
+        width: 20px;
+        margin-left: 20px;
+    }
+}
+
+.content {
+    font-size: @font-size-medium;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.image {
+    display: block;
+    margin-bottom: 12px;
+}
